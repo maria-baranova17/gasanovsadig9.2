@@ -1,0 +1,67 @@
+.contact-information {
+    padding: 71px 195px 55px 195px
+}
+
+.contact-information__title {
+    font: 600 28px/42px 'Poppins';
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 35px;
+}
+
+.form {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 145px;
+    grid-template-columns: repeat(4, 300px);
+}
+
+.form__container {
+    background: #F8F9FA;
+    padding: 0px 17px 40px 24px
+}
+
+.form__text {
+    font: 400 15px/27px 'Montserrat';
+    color: #999999;
+}
+
+.form__text-accent {
+    color: #1A1A1A;
+}
+
+.questionnaire {
+    margin-top: 48px;
+    padding: 48px 0px 79px 48px;
+    width: 540px;
+    background: #F8F9FA;
+    display: grid;
+    grid-template-rows: 52px 52px 52px 168px 58px;
+    gap: 16px;
+}
+
+.questionnaire__container {
+    box-sizing: border-box;
+    width: 484px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+}
+
+.questionnaire__container-big {
+    resize: none;
+    box-sizing: border-box;
+    width: 484px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+}
+
+.questionnaire__button {
+    text-align: center;
+    color: #FFFFFF;
+    font: 15px/0 "Montserrat", sans-serif;
+    padding: 20px 36px;
+    box-sizing: border-box;
+    width: 215px;
+    background: #CCB78F;
+    border: solid #CCB78F;
+    border-radius: 30px;
+}

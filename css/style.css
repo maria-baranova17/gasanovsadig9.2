@@ -1,0 +1,237 @@
+.without-footer {
+    display: flex;
+    width: 100%;
+}
+
+.menu {
+    width: 22%;
+    height: 1307px;
+    background: rgba(0, 0, 0, 0.04);
+    margin-top: 0px;
+    margin-left: 0px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.menu__picture {
+    border-radius: 50%;
+    margin-top: 45px;
+}
+
+.caption {
+    font: 400 24px/36px 'Poppins';
+    text-align: center;
+    color: #000000;
+    margin-bottom: 36px;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    font: 400 16px/29px 'Montserrat';
+    color: #000000;
+    text-align: center;
+    gap: 14px;
+}
+
+.navigation-menu__element {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.content-with-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer {
+    background: #242423;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    /* Можешь добавить свойство flex-wrap чтобы блоки переносились, если не будут помешаться в экране */
+}
+
+
+.footer__title {
+    font: 400 16px/24px 'Poppins';
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+
+.footer-pictures {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 56px;
+}
+
+.footer-pictures__small-pilot-pictures {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-pictures__copyright {
+    font: 400 14px/25px 'Montserrat';
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 88px;
+}
+
+.place {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.place__text {
+    font: 400 14px/21px 'Montserrat';
+    width: 280px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.place__photo {
+    width: 24px;
+    height: 24px;
+}
+
+.phone_text {
+    font: 400 14px/21px 'Montserrat';
+    color: #FFFFFF;
+}
+
+.header-contact {
+    background: #CCB78F;
+    padding: 60px 885px 60px 380px;
+}
+
+.header-contact__title {
+    font: 700 40px/60px 'Poppins';
+    color: #000000;
+}
+
+.header-contact__navigation {
+    font: 400 13px/23px 'Montserrat';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header-contact__navigation-element {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-contact__navigation-element-accent {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.menu_link {
+    position: relative;
+}
+
+.menu_link:hover {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.menu_link:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+
+}
+
+.menu_link::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+
+input::placeholder {
+    font: 400 15px/27px 'Montserrat';
+    line-height: 27px;
+    color: #999999;
+    padding-left: 22px;
+    padding-top: 12px;
+}
+
+textarea::placeholder {
+    font: 400 15px/27px 'Montserrat';
+    line-height: 27px;
+    color: #999999;
+    padding-left: 22px;
+    padding-top: 12px;
+}
+
+@media screen and (max-width:1512px) {
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.04);
+        text-align: center;
+    }
+
+    .without-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font: 400 16px/29px 'Montserrat';
+        color: #000000;
+        text-align: center;
+    }
+
+    .background_name {
+        position: absolute;
+        left: 1100px;
+        top: 67px;
+        font: 700 49px/103px 'Poppins';
+        letter-spacing: 1.71667px;
+        color: #EDEDED;
+        z-index: 0;
+    }
+
+    .caption {
+        font: 400 30px/0 'Poppins';
+        color: #000000;
+    }
+
+    .menu__picture {
+        /* border-radius: 50%; до этого было тоже самое значение */
+        border-radius: 50%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:1102px) {
+    .content {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1102px) {
+    .caption {
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+.abilities {
+    padding: 75px 210px 138px 178px;
+    display: grid;
+    grid-template-rows: repeat(2, 288px);
+    grid-template-columns: repeat(3, 350px);
+    gap: 11px 30px;
+}
+
+.abilities__text-title {
+    font: 600 20px/30px 'Poppins';
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.abilities__text {
+    font: 500 15px/27px 'Montserrat';
+    color: #999999;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #F5F5F5;
+    border-radius: 50px;
+}

@@ -1,0 +1,88 @@
+    .big-photo {
+    height: 800px;
+}
+
+.description {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.04);
+    vertical-align: top;
+    height: 800px;
+    padding-left: 5%;
+    position: relative;
+    z-index: 1;
+}
+
+.greeting {
+    font: 400 23px/43px 'Montserrat';
+    color: #BFBFBF;
+    margin-top: 90px;
+}
+
+
+.background_name {
+    position: absolute;
+    top: 67px;
+    left: 50px;
+    font: 700 69px/103px 'Poppins';
+    letter-spacing: 1.71667px;
+    color: #EDEDED;
+    z-index: -1;
+}
+
+.title {
+    max-width: 450px;
+}
+
+.title_black {
+    font: 700 40px/60px 'Poppins';
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+
+.title_color {
+    color: #CCB78F;
+}
+
+.about_me_article {
+    font: 400 18px/32px 'Montserrat';
+    color: #999999;
+    margin-top: 34px;
+    max-width: 650px;
+}
+
+.sign {
+    font: 400 40px/60px 'Herr Von Muellerhoff';
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 16;
+}
+
+@media screen and (max-width:1512px) {
+    .description {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.04);
+        vertical-align: top;
+        padding-left: 5%;
+        border-width: 5px 0 0 0;
+        border-style: solid;
+        border-color: #242423;
+    }
+}
+
+@media screen and (max-width:1302px) {
+    .background_name {
+        font: 700 44px/103px 'Poppins';
+        top: 60px;
+        left: 40px;
+    }
+    .greeting {
+        font: 400 13px/43px 'Montserrat';
+    }
+}
+
+@media screen and (max-width:1102px) {
+    .big-photo {
+            height: 100%;
+            width: 100%;
+        }
+}
